@@ -1,677 +1,318 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER / HERO */
 .box1 {
     background-image: url("img/4k-city-lights-building-night.jpg");
     background-size: cover;
- 
     background-position: center;
     border-radius: 20px;
-    height: 630px;
-    padding-top: 70px;
-
-
-
+    padding: 4rem 2rem 6rem;
+    text-align: center;
+    color: white;
 }
 
-.section1 {
-    position: relative;
-
-    top: 30px;
-
-    color: white;
-    text-align: center;
-    font-size: 35px;
+.section1 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .psize {
-    font-size: x-large;
-    margin-left: 20%;
-    margin-right: 20%;
-    position: relative;
-    top: 20px;
-
-}
-
-.but {
-
-    background-color: burlywood;
-
-
-    color: white;
-    height: 50px;
-    width: 130px;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    right: 50px;
-    top: 50px;
-    font-weight: bold;
-    font-size: large;
-     transition-duration: 1s;
-
-
-
-}
-
-
-.but1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: azure;
-    background-color: transparent;
-    border-width: 2px;
-    border-color: black;
-    border-style: solid;
-    color: white;
-    height: 50px;
-    width: 130px;
-    border-radius: 30px;
-    position: relative;
-    left: 50px;
-    top: 50px;
-    font-weight: bold;
-    font-size: large;
-
+    font-size: 1.2rem;
+    margin: 0 auto 2rem;
+    max-width: 80%;
 }
 
 .full {
     display: flex;
-    margin-top: 70px;
     justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
 
+.but, .but1 {
+    height: 50px;
+    width: 130px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.but {
+    background-color: burlywood;
+    color: white;
 }
 
 .but:hover {
     background-color: darkgoldenrod;
-    cursor: pointer;
-    transform: scale(0.8);
+    transform: scale(0.9);
+}
+
+.but1 {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
 }
 
 .but1:hover {
     background-color: white;
     color: black;
-    cursor: pointer;
-
 }
 
-.tom {
-
-    position: relative;
-    top: 100px;
-    color: white;
-    height: fit-content;
-    width: fit-content;
-  
-    border-radius: 10px;
-
-    font-size: large;
-    font-style: italic;
-    font-weight: bolder;
-
-}
-
+/* SQUARE SECTION */
 .square {
     display: flex;
     justify-content: space-around;
-
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 3rem auto;
 }
 
-.sqr1 {
-
+.square > div {
     height: 200px;
     width: 200px;
     background-color: lightsalmon;
-    position: relative;
-    bottom: 50px;
-
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.5s;
-    animation-name: square;
-
-
-    animation: square 1s ease-out;
-
+    position: relative;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
-@keyframes square {
-    100% {
-
-        transform: scale(1.2);
-    }
-
-
-}
-
-.sqr1:hover {
-
+.square > div:hover {
+    transform: scale(1.1);
     background-color: brown;
-    position: relative;
-    height: 230px;
-    width: 230px;
-}
-
-.sqr2 {
-    height: 200px;
-    width: 200px;
-    background-color: lightsalmon;
-    position: relative;
-    bottom: 50px;
-
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation-name: square;
-    animation-duration: 1s;
-
-    transition-duration: 0.5s;
-}
-
-.sqr2:hover {
-
-    background-color: brown;
-    position: relative;
-    height: 230px;
-    width: 230px;
-}
-
-.sqr3 {
-    height: 200px;
-    width: 200px;
-    background-color: lightsalmon;
-    position: relative;
-    bottom: 50px;
-
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation-name: square;
-    animation-duration: 1s;
-
-    transition-duration: 0.5s;
-}
-
-.sqr3:hover {
-
-    background-color: brown;
-    position: relative;
-    height: 230px;
-    width: 230px;
-}
-
-.sqr4 {
-    height: 200px;
-    width: 200px;
-    background-color: lightsalmon;
-    position: relative;
-    bottom: 50px;
-
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation-name: square;
-    animation-duration: 1s;
-
-    transition-duration: 0.5s;
-}
-
-.sqr4:hover {
-
-    background-color: brown;
-    position: relative;
-    height: 230px;
-    width: 230px;
 }
 
 .pic {
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
 }
 
+/* NEXT SECTION */
 .next {
-    h3 {
-        padding-top: 70px;
-        font-size: 60px;
-        text-align: center;
-    }
-
-    p {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        padding-top: 70px;
-
-        font-size: 30px;
-        width: 950px;
-    }
+    text-align: center;
+    padding: 4rem 1rem;
 }
 
-.gallery {
-    position: relative;
-    bottom: 50px;
+.next h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.next p {
+    font-size: 1.2rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* GALLERY */
+.gallery, .gallery2 {
     display: flex;
-
     flex-wrap: wrap;
-    width: 1250px;
-    padding-left: 225px;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
 }
 
-.gal {
-    margin: 10px;
+.gal, .g1 {
+    position: relative;
     overflow: hidden;
-    height: 330px;
-    width: 330px;
-
-
+    flex: 1 1 300px; /* flexible width */
+    max-width: 330px;
 }
 
-.aa {
-    position: relative;
-    bottom: 335px;
-    height: 100px;
-    width: 330px;
+.gal img, .g1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
 
+.gal:hover img, .g1:hover img {
+    transform: scale(1.1);
+}
+
+.aa, .bb, .cc, .hh, .pp {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    align-content: center;
-    background-color: rgba(27, 25, 25, 0.5);
-    transition: transform 0.3s ease-in-out;
-    opacity: 0;
-}
-
-
-.bb {
-    position: relative;
-    bottom: 335px;
-    height: 100px;
-    width: 330px;
-    background-color: rgba(27, 25, 25, 0.5);
-    text-align: center;
-
-    align-content: center;
-    transition: transform 0.3s ease-in-out;
-    opacity: 0;
-
-}
-
-.cc {
-    position: relative;
-    bottom: 335px;
-    height: 100px;
-    width: 330px;
-
-    background-color: rgba(27, 25, 25, 0.5);
-
-    text-align: center;
-    align-content: center;
-    transition: transform 0.3s ease-in-out;
-    opacity: 0;
-
-}
-
-.gal:hover .aa{
-    opacity: 1;
-    transform: scale(1.2);
-}
-
-.gal:hover .bb {
-    opacity: 1;
-    transform: scale(1.2);
-}
-
-.gal:hover .cc {
-    opacity: 1;
-    transform: scale(1.2);
-}
-
-
-
-
-.zoom {
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-    object-position: center;
-}
-
-.zoom:hover {
-    transform: scale(1.2);
-}
-
-.moveup {
-    position: relative;
-    bottom: 35px;
-    font-size: larger;
-    font-style: italic;
-}
-
-.butt {
-    height: 40px;
-    width: 170px;
-    background-color: burlywood;
-    border-radius: 50px;
-    transition-duration: 1s;
-    overflow: hidden;
-
-
+    background-color: rgba(0,0,0,0.6);
     color: white;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.gal:hover .aa,
+.gal:hover .bb,
+.gal:hover .cc,
+.g1:hover .hh,
+.g1:hover .pp {
+    opacity: 1;
+}
+
+/* BUTTONS */
+.butt {
+    margin: 2rem auto;
+    width: 170px;
+    border-radius: 50px;
+    height: 40px;
+    background-color: burlywood;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .butt:hover {
     background-color: darkred;
-    transform: scale(0.8);
+    transform: scale(0.9);
 }
 
-.part {
-    height: 1300px;
-    width: 100%;
-    background-color: rgba(186, 163, 105, 0.819);
-    margin-top: 60px;
-
-    padding-top: 50px;
+/* WHITE SECTION */
+.white {
+    padding: 4rem 2rem;
 }
 
-.plate {
-    font-size: 70px;
-    color: white;
-}
-
-.yy {
-
-    width: 700px;
-    line-height: 30px;
-    font-size: x-large;
-    margin-top: 30px;
-    color: white;
-}
-
-.gallery2 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 20px;
-    margin-right: 20px;
-    justify-content: center;
-    margin-top: 30px;
-
-
-}
-
-
-
-.gg {
-
-    margin: 10px;
-    object-fit: cover;
-
-    opacity: 0;
-    animation: ani 1s ease-in forwards;
-    transform: scale(0.5);
-
-
-
-}
-
-@keyframes ani {
-    from {
-        opacity: 0;
-        transform: scale(0.5);
-
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-
-    }
-
-}
-.g1{
-    height: 431.66px;
-    width: 351.5px;
-    margin: 10px;
-}
-
-.hh{
-    height: 150px;
-    width: 351.5px;
-    background-color: rgba(30, 30, 30, 0.6 );
-    color: white;
-    position: relative;
-    left:10px;
-    bottom: 165px;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    animation-name: bb;
-    object-fit: cover;
-font-size: x-large;
-    opacity: 0;
-    animation: ani 1s ease-in forwards;
-    transform: scale(0.5);
-
-}
-.pp{
-    position: relative;
-    left:10px;
-    bottom: 210px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-name: bb;
-    object-fit: cover;
-    color: white;
-    opacity: 0;
-    animation: ani 1s ease-in forwards;
-    transform: scale(0.5);
-    font-size: large;
-   font-style: italic;
-
-}
-@keyframes bb {
-    0%{
-        transform:scale(0.5);
-    }
-    100%{
-        transform: scale(1);
-    }
-    
-}
-.ii{
-    color: white;
-    position: relative;
-    top: 70px;
-    font-size:25px ;
-}
-.anc{
-   
-    color: white;
-    position: relative;
-    left: 3px;
-    font-size: 25px;
-}
-.white{
-    height: 700px;
-width: 100%;
-background-color: white;
-}
-.gh{
-    font-size: 60px;
+.gh {
     text-align: center;
-    padding-top: 70px;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
-.role{
-    display: flex;
-justify-content: center;
-    
-}
-.uu1{
-    margin: 50px;
-    object-fit: cover;
-}
-.bo1{
-    margin: 50px;
-    height: 100px;
-    width:250px;
-    background-color: rgb(143, 125, 76);
-    position: relative;
-    bottom: 250px;
-   color: white;
+
+.role {
     display: flex;
     flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-.bun{
-    display: flex;
     justify-content: center;
-    
+    gap: 2rem;
 }
-.naveen{
-    position: relative;
-   right: 50px;
-   
-}
-.navi{
-    position: relative;
-    left: 50px;}
-    
-    .dd{
-        font-size: 25px;
-        width: 150px;
-        text-align: center;
-        
-    }
-    .pz{
-    font-size: 20px;
-    }
-    .parad{
-        display: flex;
-       
-        
-    justify-content: space-evenly;
-    position: relative;
-    bottom: 250px;
-    font-size: 20px;
-    text-underline-offset: 30px; 
-    text-decoration: underline;       
-    }
-    .clo{
-        color: black;
-        transition-duration: 1s;
-       }
-       
 
-.clo:hover{
-  color:green;
-    transform: scale(0.8);
+.uu1 {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
-.lastbg{
-    width: 100%;
-    height: 700px;
+
+/* FEATURE CARDS */
+.bun {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.bo1 {
+    background-color: rgb(143, 125, 76);
+    color: white;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* LINKS */
+.parad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.clo {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.clo:hover {
+    color: green;
+    transform: scale(0.95);
+}
+
+/* CONTACT FORM */
+.lastbg {
     background-image: url("img/set.jpeg");
     background-size: cover;
-
-background-position: center;
-}
-.fit{
+    background-position: center;
+    padding: 5rem 1rem;
     color: white;
-    font-size: 70px;
-    position: relative;
-    top: 150px;
-left: 170px;
-display: inline;
-}
-.np{
-    width: 500px;
-    line-height: 30px;
-    font-size:x-large;
-    color: white;
-    position: relative;
-    top: 190px;
-    left: 140px;
-}
-.form{
-    position:relative;
-    left: 750px;
-    color: white;
-    bottom: 100px;
-    display: inline-block;
-}
-#q1{
-    height: 45px;
-    width: 300px;
-   
-}
-#q2{
-    height: 45px;
-    width: 300px;
-    
-}
-#q3{
-    height: 40px;
-    width: 640px;
-    
-}
-#q4{
-    height: 100px;
-    width: 640px;
-    
-}
-.jkrs{
-display: flex;
-}
-.mailc{
-    position: relative;
-    right: 40px;
 }
 
-.mailc2{
-    position: relative;
-    right: 40px;
-    top: 30px;
+.lastbg h5 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
-.mailc3{
-    position: relative;
-    right: 40px;
-    top: 60px;
-}
-.llbb{
-    background-color: peru;
-    border-radius: 50px;
-    height: 50px;
-    width: 640px;
-    text-align: center;
-    align-content: center;
-    position: relative;
-    left: 715px;
-    
-    
-   
-}
-.peru:hover{
-    font-size: 30px;
-  
 
+.form {
+    max-width: 700px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
-.peru{
-    font-size: 25px;
-    color: white;
-    transition-duration: 0.7s;
-    overflow: hidden;
 
+.form input {
+    padding: 0.8rem;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+    .gallery, .gallery2 {
+        padding: 2rem 0;
+    }
+    .square > div {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 900px) {
+    .section1 h1 { font-size: 2rem; }
+    .psize { font-size: 1rem; }
+    .but, .but1 { width: 120px; height: 45px; font-size: medium; }
+    .square > div { width: 150px; height: 150px; }
+}
+
+@media (max-width: 600px) {
+    .full {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .gallery, .gallery2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .role {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .bun {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
